@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div class="d-flex justify-content-start align-items-start" style="height: 100vh;">
+        <div style="position: relative; display: inline-block;">
+            <video id="video" width="640" height="480" autoplay muted playsinline style="position: absolute; z-index: 1;"></video>
+            <canvas id="canvas" width="640" height="480" style="position: absolute; z-index: 2;"></canvas>
+        </div>
+    </div>
+</div>
+<div id="face-counts">
+    <p>In frame count: <span id="in-frame-count">0</span></p>
+    <p>Out frame count: <span id="out-frame-count">0</span></p>
+</div>
+
+
